@@ -19,10 +19,10 @@
         <h1>Test Application</h1>
     </div>
     <div id="overview">
-      <div id="main">
-        <movie-list></movie-list>
-        <movie-filter></movie-filter>
-      </div>
+        <div class="main">
+            <movie-list v-bind:genre="genre" v-bind:time="time" v-bind:movies="movies"></movie-list>
+            <movie-filter v-on:check-filter="checkFilter"></movie-filter>
+        </div>
     </div>
 </div>
 <script src="/dist/build.js"></script>
